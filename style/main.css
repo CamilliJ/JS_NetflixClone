@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Kaushan+Script&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+
+body{
+    background: var(--preto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+header{
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+
+
+.logo{
+    font-family: 'Bebas Neue', cursive;
+    color: var(--vermelho);
+    font-size: 50px;
+    
+}
+
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 30px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Elementos filme principal*/
+
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/cover1.jpg');
+    
+    height: 550px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.descricao{
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.titulo{
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-family: 'Trebuchet MS';
+}
+
+main .container{
+    margin-left: 40px;
+}
+
+.botoes{
+    margin-left: 30px;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    font-size: 12px;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.filme-principal .descricao{
+    width: 50%;
+}
+
+.carrosel-filmes{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.box-filme{
+    height: 100%;
+    width:100%;
+    display: block;
+}
+
+.categoria{
+    color: white;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS';
+}
+
+#transparencia{
+    background-color: black;
+    
+    display: none;
+    opacity : 0.6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.modal-filme{
+    display: none;
+    background-color: #191919;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 600px;
+    width: 1000px;
+    z-index: 5;
+}
+
+.fechar-img{
+    width: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: -20px;
+    margin-right: -20px;
+    cursor: pointer;
+}
+
+.poster{
+    width: 100%;
+    height: 600px;
+    
+}
+
+#homemaranha-bg{
+    background: linear-gradient(rgba(0,0,0,.99),rgba(0,0,0,.50)100%), url('/img/homem_img.jpg');
+    background-size: cover;
+}
+
+#batman-bg{
+    background: linear-gradient(rgba(0,0,0,.99),rgba(0,0,0,.50)100%), url('/img/batman_img.jpg');
+    background-size: cover;
+}
+
+#eternos-bg{
+    background: linear-gradient(rgba(0,0,0,.99),rgba(0,0,0,.50)100%), url('/img/eternos_img.jpg');
+    background-size: cover;
+}
+
+#encanto-bg{
+    background: linear-gradient(rgba(0,0,0,.99),rgba(0,0,0,.50)100%), url('/img/encanto_img.jpg');
+    background-size: cover;
+}
+
+#red-bg{
+    background: linear-gradient(rgba(0,0,0,.99),rgba(0,0,0,.50)100%), url('/img/red-fundo.jpg');
+    background-size: cover;
+}
+
+#lucifer-bg{
+    background: linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.50)100%), url('/img/lucifer_img.jpg');
+    background-size: cover;
+}
+
+#euphoria-bg{
+    background: linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.50)100%), url('/img/euphoria_img.jpg');
+    background-size: cover;
+}
+
+
+.linhacabecalhoposter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.logo-poster{
+    width: 500px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.batman-logo{
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.encanto-logo{
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 40px; 
+}
+
+.red-logo{
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 40px; 
+}
+
+.lucifer-logo{
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.euphoria-logo{
+    width: 500px;
+    margin-top: 40px;
+    margin-left: 40px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 200px;
+    margin-right: 40px;
+}
+
+.botoes-opcoes{
+    
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.botoes-opcoes-euphoria{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.opçoes{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: end;
+    margin-right: 40px;
+}
+
+.botaoalt{
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.imgopcao{
+    width: 20px;
+}
+
+.sinopse-poster{
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 200px;
+    height: 230px;
+    padding-top: 60px;
+    background-color: #000000;
+    color: #989898;
+}
+
+.eternos-sinopse{
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 260px;
+    height: 130px;
+    padding-top: 60px;
+    background-color: #000000;
+    color: #989898;
+}
+
+.encanto-sinopse{
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 260px;
+    height: 230px;
+    padding-top: 60px;
+    background-color: #000000;
+    color: #989898;
+}
+
+.red-sinopse{
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 140px;
+    height: 230px;
+    padding-top: 60px;
+    background-color: #000000;
+    color: #989898;
+}
+
+.lucifer-sinopse{
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 290px;
+    height: 150px;
+    padding-top: 60px;
+    background-color: #000000;
+    color: #989898;
+}
+
+.euphoria-sinopse{
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 299px;
+    height: 150px;
+    padding-top: 60px;
+    background-color: #000000;
+    color: #989898;
+}
+
+.sinopse-batman{
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 240px;
+    height: 210px;
+    padding-top: 30px;
+    background-color: #000000;
+    color: #989898;
+}
+

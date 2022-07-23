@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <title>Netflix</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">N E T F L I X</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo"> A Maldição da Residência Hill </h3>
+                <p class="descricao">Entre o passado e o presente, uma família dividida confronta memórias assustadoras
+                    do antigo lar e dos eventos aterrorizantes que os expulsaram de lá. Assista Agora a nova temporada!
+                </p>
+            </div>
+            <div class="botoes">
+                <button class="botao">
+                    <i class="fas fa-play"></i>
+                    ASSISTIR AGORA
+                </button>
+                <button class="botao">
+                    <i class="fas fa-info-circle"></i>
+                    MAIS INFORMAÇÕES
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="linha">
+        <div class="categoria">
+            Em alta:
+        </div>
+        <div class="carrosel-filmes">
+            <div class="owl-carousel owl-theme">
+                
+                <div class="item">
+                    <img src="img/homem_poster.jpg" alt="" class="box-filme" id="homemaranha">
+                </div>
+                <div class="item">
+                    <img src="img/euphoria_poster.jpg" alt="" class="box-filme" id="euphoria">
+                </div>
+                <div class="item">
+                    <img src="img/batman_poster.jpg" alt="" class="box-filme" id="batmam">
+                </div>
+                <div class="item">
+                    <img src="img/red_poster.jpg" alt="" class="box-filme" id="red">
+                </div>
+                <div class="item">
+                    <img src="img/encanto_poster.jpg" alt="" class="box-filme" id="encanto">
+                </div>
+                <div class="item">
+                    <img src="img/lucifer_poster.jpg" alt="" class="box-filme" id="lucifer">
+                </div>
+                
+                <div class="item">
+                    <img src="img/eternos_poster.jpg" alt="" class="box-filme" id="eternos">
+                </div>
+                <div class="item">
+                    <img src="img/hotel_poster.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/agentedadombras_poster.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/semsaida_poster.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/kimi_poster.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/eradogelo_poster.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/peaky_poster.jpg" alt="" class="box-filme">
+                </div>
+
+                <div class="item">
+                    <img src="img/flesh_poster.jpg" alt="" class="box-filme">
+                </div>
+
+                <div class="item">
+                    <img src="img/pacificador_post.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/miraculos_poster.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/vikins_poster.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/reacher_posterjpg.jpg" alt="" class="box-filme">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="transparencia"></div>
+
+    <div class="modal-filme" id="modal-homemaranha">
+        <div id="fechar">
+            <img src="img/perto.png" alt="" class="fechar-img" id="fechar">
+        </div>
+        <div class="poster" id="homemaranha-bg">
+            <div class="linhacabecalhoposter">
+                <img src="img/homem-logo.png" alt="" class="logo-poster">
+                <div class="botoes-opcoes">
+                    <button class="botao" id="circulo-botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <div class="opçoes">
+                        <button class="botaoalt" id="lista" onclick="lista()">
+                            <img src="img/verifica.png" alt="" class="imgopcao">
+                        </button>
+                        <button class="botaoalt" id="gostar" onclick="gostar()">
+                            <img src="img/gostar.png" alt="" class="imgopcao">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="sinopse-poster">
+                Depois do nosso herói ter sido desmascarado pelo seu inimigo Mysterio, Peter Parker já não é capaz de
+                separar a sua vida normal do seu estatuto de super-herói, pelo que só lhe resta pedir ajuda ao Mestre
+                das Artes Místicas, o Doutor Estranho, para que apague a sua real identidade da cabeça de todos. No
+                entanto, esse feitiço leva-o a uma realidade que não é a sua e onde terá de enfrentar novos inimigos,
+                ainda mais perigosos, forçando-o a descobrir o que realmente significa ser o Homem-Aranha.
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal-filme" id="modal-batman">
+        <div id="fechar">
+            <img src="img/perto.png" alt="" class="fechar-img" id="fechar2">
+        </div>
+        <div class="poster" id="batman-bg">
+            <div class="linhacabecalhoposter">
+                <img src="img/batman-logo.png" alt="" class="batman-logo">
+                <div class="botoes-opcoes">
+                    <button class="botao" id="circulo-botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <div class="opçoes">
+                        <button class="botaoalt" id="listabatman" onclick="listabatman()">
+                            <img src="img/verifica.png" alt="" class="imgopcao">
+                        </button>
+                        <button class="botaoalt" id="gostarbatman" onclick="gostarbatman()">
+                            <img src="img/gostar.png" alt="" class="imgopcao">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="sinopse-batman">
+                Quando um assassino ataca a elite de Gotham com uma série de máquinas sádicas, um rasto de pistas
+                misteriosas e obscuras levam o Maior Detetive do Mundo a investigar o submundo, onde encontra
+                personagens como Selina Kyle/Catwoman, Oswald Cobblepot/The Penguin, Carmine Falcone, e Edward
+                Nashton/The Riddler. À medida que as provas o encaminham para mais perto de casa e a grandeza do plano
+                do vilão se torna mais clara, Batman tem de forjar novas relações, desmascarar o culpado, e trazer
+                justiça ao abuso de poder e à corrupção que há muito assolam a Cidade de Gotham.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-filme" id="modal-eternos">
+        <div id="fechar">
+            <img src="img/perto.png" alt="" class="fechar-img" id="fechar3">
+        </div>
+        <div class="poster" id="eternos-bg">
+            <div class="linhacabecalhoposter">
+                <img src="img/eternos.png" class="eternos-logo">
+                <div class="botoes-opcoes">
+                    <button class="botao" id="circulo-botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <div class="opçoes">
+                        <button class="botaoalt" id="listaeternos" onclick="listaeternos()">
+                            <img src="img/verifica.png" alt="" class="imgopcao">
+                        </button>
+                        <button class="botaoalt" id="gostareternos" onclick="gostareternos()">
+                            <img src="img/gostar.png" alt="" class="imgopcao">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="eternos-sinopse">
+                Quando criaturas monstruosas, os Deviants, há muito tempo dadas como extintas, regressam
+                misteriosamente, os Eternals (Eternos) são forçados a reunir-se para, mais uma vez, defender a
+                humanidade.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-filme" id="modal-encanto">
+        <div id="fechar">
+            <img src="img/perto.png" alt="" class="fechar-img" id="fechar4">
+        </div>
+        <div class="poster" id="encanto-bg">
+            <div class="linhacabecalhoposter">
+                <img src="img/encanto-logo.png" class="encanto-logo">
+                <div class="botoes-opcoes">
+                    <button class="botao" id="circulo-botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <div class="opçoes">
+                        <button class="botaoalt" id="listaencanto" onclick="listaencanto()">
+                            <img src="img/verifica.png" alt="" class="imgopcao">
+                        </button>
+                        <button class="botaoalt" id="gostarencanto" onclick="gostarencanto()">
+                            <img src="img/gostar.png" alt="" class="imgopcao">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="encanto-sinopse">
+                A história dos Madrigal, uma família extraordinária que vive escondida numa casa mágica nas montanhas da
+                Colômbia, numa vila vibrante num sítio mágico e maravilhoso chamado Encanto. A magia do Encanto concedeu
+                um dom único, como superforça ou o poder de curar, a todas as crianças da família exceto a uma, Mirabel.
+                Mas, quando descobre que a magia em redor do Encanto corre perigo, Mirabel decide que, sendo a única
+                Madrigal vulgar, pode ser a última esperança da família.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-filme" id="modal-red">
+        <div id="fechar">
+            <img src="img/perto.png" alt="" class="fechar-img" id="fechar5">
+        </div>
+        <div class="poster" id="red-bg">
+            <div class="linhacabecalhoposter">
+                <img src="img/red.png" class="red-logo">
+                <div class="botoes-opcoes">
+                    <button class="botao" id="circulo-botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <div class="opçoes">
+                        <button class="botaoalt" id="listared" onclick="listared()">
+                            <img src="img/verifica.png" alt="" class="imgopcao">
+                        </button>
+                        <button class="botaoalt" id="gostarred" onclick="gostarred()">
+                            <img src="img/gostar.png" alt="" class="imgopcao">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="red-sinopse">
+                Da Disney e da Pixar, "Turning Red - Estranhamente Vermelho" conta a história de Mei Lee, uma rapariga
+                de 13 anos confiante, mas trapalhona, que tenta ser uma filha obediente no meio do caos da adolescência.
+                Ming, a mãe superprotetora de Mei, está sempre por perto, o que é uma maçada para uma adolescente. Como
+                se as mudanças nos seus interesses, relações e corpo não chegassem, quando fica muito entusiasmada (o
+                que acontece quase SEMPRE) transforma-se num panda-vermelho gigante!
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-filme" id="modal-lucifer">
+        <div id="fechar">
+            <img src="img/perto.png" alt="" class="fechar-img" id="fechar6">
+        </div>
+        <div class="poster" id="lucifer-bg">
+            <div class="linhacabecalhoposter">
+                <img src="img/logo-lucifer.png" class="lucifer-logo">
+                <div class="botoes-opcoes">
+                    <button class="botao" id="circulo-botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <div class="opçoes">
+                        <button class="botaoalt" id="listalucifer" onclick="listalucifer()">
+                            <img src="img/verifica.png" alt="" class="imgopcao">
+                        </button>
+                        <button class="botaoalt" id="gostarlucifer" onclick="gostarlucifer()">
+                            <img src="img/gostar.png" alt="" class="imgopcao">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="lucifer-sinopse">
+                Entediado com a vida nas trevas, o diabo se muda para Los Angeles, abre um piano-bar e empresta sua
+                sabedoria a uma investigadora de assassinatos. </div>
+        </div>
+    </div>
+
+    <div class="modal-filme" id="modal-euphoria">
+        <div id="fechar">
+            <img src="img/perto.png" alt="" class="fechar-img" id="fechar7">
+        </div>
+        <div class="poster" id="euphoria-bg">
+            <div class="linhacabecalhoposter">
+                <img src="img/euphoria-logo.png" class="euphoria-logo">
+                <div class="botoes-opcoes-euphoria" >
+                    <button class="botao" id="circulo-botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <div class="opçoes">
+                        <button class="botaoalt" id="listaeuphoria" onclick="listaeuphoria()">
+                            <img src="img/verifica.png" alt="" class="imgopcao">
+                        </button>
+                        <button class="botaoalt" id="gostareuphoria" onclick="gostareuphoria()">
+                            <img src="img/gostar.png" alt="" class="imgopcao">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="euphoria-sinopse">
+                Um grupo de estudantes do ensino médio lida com diferentes situações típicas da idade como drogas, sexo, busca pela identidade, traumas, comportamento nas redes sociais e amizade. </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script src="main.js"></script>
+    <script src="teste.js"></script>
+</body>
+
+</html>
